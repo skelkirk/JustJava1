@@ -23,7 +23,8 @@ public class GuessNumberEasier {
             if(scanner.hasNextInt()) {
                 a = scanner.nextInt();
             } else {
-                System.out.println("Вы ввели неверное число");
+                System.out.println("Вы ввели не целое число");
+                scanner.next();
                 continue;
             }
             if (a < MIN_RANGE_VALUE || a > MAX_RANGE_VALUE) {
